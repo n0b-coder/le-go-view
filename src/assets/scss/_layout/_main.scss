@@ -1,0 +1,15 @@
+$color-dark-gray: #585854;
+$color-light-gray: #F4F4F4;
+$color-yellow: #FFCD03;
+
+body {
+    background-color: $color-light-gray;
+}
+
+.header {
+    background-color: $color-yellow !important;
+}
+
+.footer {
+    background-color: $color-dark-gray !important;
+}

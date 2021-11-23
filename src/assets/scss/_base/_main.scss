@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Montserrat:wght@300;400&display=swap');
+@import './_layout/main';
+
+.lego-titles{
+  font-family: 'Comfortaa', cursive;
+  font-weight: 400;
+}
+
+.lego-text{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  &--caption{
+    font-size: 14px;
+    &--light{
+      font-weight: 300;
+    }
+  }
+}
+
+.footer-text {
+  color: white;
+}
+
+a.router-link-exact-active{
+  color: $color-dark-gray !important;
+}
+
+a {
+  color: $color-dark-gray !important;
+  &:hover {
+    color: $color-dark-gray !important;
+  }
+}
