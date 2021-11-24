@@ -10,6 +10,7 @@ import image6 from '@/assets/models/imgs/figure.jpg';
 
 import carouselImage1 from '@/assets/imgs/banner/ban1.jpeg';
 import carouselImage2 from '@/assets/imgs/banner/ban2.jpg';
+import carouselImage3 from '@/assets/imgs/banner/ban3.jpeg';
 
 Vue.use(Vuex);
 
@@ -18,7 +19,7 @@ export default new Vuex.Store({
     images: {
       carouselImages: [
         carouselImage2,
-        'https://www.lego.com/cdn/cs/set/assets/blt793defaf276bafe5/Classic-BI_main-Hero-Standard-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=1',
+        carouselImage3,
         carouselImage1,
       ],
       models: [
@@ -46,12 +47,12 @@ export default new Vuex.Store({
         },
         {
           image: image5,
-          model: 'taxi.glb',
+          model: 'nave.glb',
           url: 'https://youtu.be/nWBlw4HWEkE',
         },
         {
           image: image6,
-          model: 'figure.glb',
+          model: 'nave.glb',
           url: 'https://youtu.be/6m-TMispAWc',
         },
       ],
