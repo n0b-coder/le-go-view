@@ -18,7 +18,7 @@ const routes = [
   },
   {
     path: '/visualize-object',
-    name: 'VisualizeObject',
+    name: 'ObjVisualization',
     component: Visualize,
   },
 ];
