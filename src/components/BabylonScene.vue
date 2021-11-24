@@ -15,8 +15,6 @@ export default {
     if (bjsCanvas) {
       createScene(bjsCanvas);
     }
-    this.$forceUpdate();
-    console.log('create scene');
   },
 };
 </script>
