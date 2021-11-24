@@ -2,7 +2,11 @@
   <nav class="navbar is-fixed-top header" role="navigation" aria-label="main navigation">
     <div class="navbar-brand header">
       <a class="navbar-item" href="#">
-        <router-link to="/">LOGO</router-link>
+        <router-link to="/">
+          <figure class="image">
+            <img src="../assets/imgs/lego-logo.png">
+          </figure>
+        </router-link>
       </a>
       <a
         role="button"
@@ -23,9 +27,6 @@
         </a>
         <a class="navbar-item lego-text">
           <router-link to="/gallery">Galería</router-link>
-        </a>
-        <a class="navbar-item lego-text">
-          <router-link to="/help">Ayuda (?)</router-link>
         </a>
       </div>
     </div>

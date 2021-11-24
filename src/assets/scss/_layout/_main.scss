@@ -1,9 +1,10 @@
 $color-dark-gray: #585854;
 $color-light-gray: #F4F4F4;
+$color-darker-gray: #080808;
 $color-yellow: #FFCD03;
 
 body {
-    background-color: $color-light-gray;
+    background-color: $color-darker-gray;
 }
 
 .header {
@@ -11,5 +12,5 @@ body {
 }
 
 .footer {
-    background-color: $color-dark-gray !important;
+    background-color: $color-darker-gray !important;
 }

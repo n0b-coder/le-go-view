@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap');
 @import './_layout/main';
 
 .lego-titles{
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Permanent Marker', cursive;
   font-weight: 400;
+  font-size: 24px;
+  color: $color-light-gray;
+}
+
+.lego-subtitles{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: $color-light-gray;
 }
 
 .lego-text{

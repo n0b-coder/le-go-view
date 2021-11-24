@@ -5,7 +5,7 @@
     </div>
     <router-view/>
     <footer class="footer footer-text">
-      <div class="pl-6 pt-3 pr-6">
+      <div class="pl-6 pt-6 pr-6">
         <div class="level">
           <div class="level-left">
             <div class="level-item">
@@ -13,11 +13,13 @@
             </div>
           </div>
           <div class="level-center">
-            <p class="lego-text lego-text--caption lego-text--caption--light">Eslogan</p>
+            <p class="lego-text lego-text--caption lego-text--caption--light">
+              2021</p>
           </div>
           <div class="level-right">
             <div class="level-item">
-              LOGO
+              <p class="lego-text lego-text--caption lego-text--caption--light">
+                Todos los derechos reservados</p>
             </div>
           </div>
         </div>
