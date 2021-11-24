@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
+import Visualize from '../views/ObjVisualization.vue';
 
 Vue.use(VueRouter);
 
@@ -13,12 +14,12 @@ const routes = [
   {
     path: '/gallery',
     name: 'Gallery',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Gallery.vue'),
+    component: () => import(/* webpackChunkName: "gallery" */ '../views/Gallery.vue'),
   },
   {
     path: '/visualize-object',
     name: 'VisualizeObject',
-    component: () => import(/* webpackChunkName: "about" */ '../views/ObjVisualization.vue'),
+    component: Visualize,
   },
 ];
 
