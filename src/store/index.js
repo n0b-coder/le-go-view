@@ -63,13 +63,10 @@ export default new Vuex.Store({
       model: '',
     },
   },
-  updateWindow() {
-    window.location.reload();
-  },
   mutations: {
     setCurrentModel(state, payload) {
       state.currentModel = payload;
-      this.updateWindow();
+      window.location.reload();
     },
   },
   actions: {
