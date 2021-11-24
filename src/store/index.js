@@ -72,7 +72,7 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    async updateCurrentModel({ commit }, payload) {
+    updateCurrentModel({ commit }, payload) {
       console.log('action');
       commit('setCurrentModel', payload);
       window.localStorage.setItem('modelData', JSON.stringify({ model: payload.model, image: payload.image, url: payload.url }));
