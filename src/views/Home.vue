@@ -41,7 +41,7 @@
               Visualiza la demostración
             </p>
             <template>
-              <LazyYoutube max-width="100%" aspectRatio="16:9" src="https://www.youtube.com/watch?v=l34EihmVzTI" />
+              <LazyYoutube max-width="100%" aspectRatio="16:9" src="https://youtu.be/nWBlw4HWEkE" />
             </template>
           </div>
         </div>
