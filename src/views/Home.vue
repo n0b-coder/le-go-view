@@ -48,6 +48,11 @@ import ImageCards from '@/components/ImageCards.vue';
 
 export default {
   name: 'Home',
+  data() {
+    return {
+      model: '',
+    };
+  },
   components: {
     ImageCards,
     LazyYoutube,

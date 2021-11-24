@@ -33,6 +33,9 @@ export default {
   components: {
     NavBar,
   },
+  mounted() {
+    this.$forceUpdate();
+  },
 };
 </script>
 

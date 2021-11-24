@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import Bulma from 'bulma';
 import VueSplide from '@splidejs/vue-splide';
+import * as BABYLON from 'babylonjs';
+import 'babylonjs-loaders';
 import vb from 'vue-babylonjs';
 
 import App from './App.vue';
@@ -11,6 +13,7 @@ import './assets/scss/main.scss';
 
 Vue.use(VueSplide);
 Vue.use(Bulma);
+Vue.use(BABYLON);
 Vue.use(vb);
 
 Vue.config.productionTip = false;
