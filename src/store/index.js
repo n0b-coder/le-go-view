@@ -63,9 +63,13 @@ export default new Vuex.Store({
       model: '',
     },
   },
+  updateWindow() {
+    window.location.reload();
+  },
   mutations: {
     setCurrentModel(state, payload) {
       state.currentModel = payload;
+      this.updateWindow();
     },
   },
   actions: {
@@ -74,7 +78,6 @@ export default new Vuex.Store({
       commit('setCurrentModel', payload);
       window.localStorage.setItem('modelData', JSON.stringify({ model: payload.model, image: payload.image, url: payload.url }));
       // eslint-disable-next-line no-restricted-globals
-      window.location.reload();
     },
   },
 });
