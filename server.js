@@ -4,6 +4,14 @@ const path = require('path');
 
 const app = express();
 
+app.use((req, res, next) => {
+  res.setHeader(
+    'Content-Security-Policy',
+    "default-src 'none';",
+  );
+  next();
+});
+
 app.use(serveStatic(path.join(__dirname, 'dist')));
 const port = process.env.PORT || 3000;
 app.listen(port);
