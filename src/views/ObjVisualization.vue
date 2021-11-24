@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="currentModel.model">
     <section class="hero is-medium">
       <div class="hero-body">
         <div class="is-flex is-justify-content-space-between pr-6 pl-6">
@@ -12,7 +12,7 @@
         </div>
       </div>
     </section>
-    <section class="hero is-medium">
+    <section class="hero is-medium" v-if="tutorialUrl">
       <div class="hero-body">
         <div class="is-flex is-justify-content-space-between pr-6 pl-6">
           <div class="is-flex is-align-items-center" style="width: 100%;">

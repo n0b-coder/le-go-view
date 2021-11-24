@@ -9,6 +9,8 @@ import image5 from '@/assets/models/imgs/taxi.jpg';
 import image6 from '@/assets/models/imgs/figure.jpg';
 import image7 from '@/assets/models/imgs/legoCar.png';
 import image8 from '@/assets/models/imgs/hotRod.jpg';
+import image9 from '@/assets/models/imgs/driver.jpg';
+import image10 from '@/assets/models/imgs/ghost.jpg';
 
 import carouselImage1 from '@/assets/imgs/banner/ban1.jpeg';
 import carouselImage2 from '@/assets/imgs/banner/ban2.jpg';
@@ -60,12 +62,22 @@ export default new Vuex.Store({
         {
           image: image7,
           model: 'legoCar.glb',
-          url: 'https://youtu.be/6m-TMispAWc',
+          url: '',
         },
         {
           image: image8,
           model: 'hotRod.glb',
-          url: 'https://youtu.be/6m-TMispAWc',
+          url: '',
+        },
+        {
+          image: image9,
+          model: 'driver.glb',
+          url: 'https://youtu.be/mHNX6Lr_n6I',
+        },
+        {
+          image: image10,
+          model: 'ghost.glb',
+          url: 'https://youtu.be/9T0_zAyrbiI',
         },
       ],
     },

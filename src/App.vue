@@ -18,8 +18,11 @@
           </div>
           <div class="level-right">
             <div class="level-item">
-              <p class="lego-text lego-text--caption lego-text--caption--light">
-                Todos los derechos reservados</p>
+              <a href="https://www.instagram.com/multirevels">
+              <figure class="image is-32x32">
+                <img src="./assets/imgs/ig.png">
+              </figure>
+              </a>
             </div>
           </div>
         </div>
