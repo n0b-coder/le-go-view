@@ -5,7 +5,7 @@
         v-for="imageCard in images.models"
         :key="imageCard.id"
         class="is-half-desktop column is-clickable"
-        @click="updateCurrentModel(imageCard)"
+        @click="updateModel(imageCard)"
       >
         <router-link to="/visualize-object">
           <image-cards :imgUrl="imageCard.image" />
@@ -17,7 +17,7 @@
         v-for="imageCard in images.galleryImages"
         :key="imageCard.id"
         class="is-half-desktop column is-clickable"
-        @click="updateCurrentModel(imageCard)"
+        @click="updateModel(imageCard)"
       >
         <router-link to="/visualize-object">
           <image-cards :imgUrl="imageCard.image" />
@@ -41,6 +41,10 @@ export default {
   },
   methods: {
     ...mapActions(['updateCurrentModel']),
+    async updateModel(payload) {
+      await this.updateCurrentModel(payload);
+      window.location.reload();
+    },
   },
 };
 </script>
