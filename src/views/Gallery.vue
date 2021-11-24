@@ -42,7 +42,7 @@ export default {
   methods: {
     ...mapActions(['updateCurrentModel']),
     async updateModel(payload) {
-      await this.updateCurrentModel(payload);
+      await Promise.all([this.updateCurrentModel(payload)]);
       window.location.reload();
     },
   },

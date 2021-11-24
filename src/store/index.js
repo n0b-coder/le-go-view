@@ -74,8 +74,8 @@ export default new Vuex.Store({
   actions: {
     async updateCurrentModel({ commit }, payload) {
       console.log('action');
-      await commit('setCurrentModel', payload);
-      await window.localStorage.setItem('modelData', JSON.stringify({ model: payload.model, image: payload.image, url: payload.url }));
+      await Promise.all([commit('setCurrentModel', payload)]);
+      window.localStorage.setItem('modelData', JSON.stringify({ model: payload.model, image: payload.image, url: payload.url }));
       // eslint-disable-next-line no-restricted-globals
     },
   },
