@@ -47,12 +47,12 @@ export default new Vuex.Store({
         },
         {
           image: image5,
-          model: 'nave.glb',
+          model: 'taxi.glb',
           url: 'https://youtu.be/nWBlw4HWEkE',
         },
         {
           image: image6,
-          model: 'nave.glb',
+          model: 'figure.glb',
           url: 'https://youtu.be/6m-TMispAWc',
         },
       ],

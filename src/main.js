@@ -18,8 +18,13 @@ Vue.use(vb);
 
 Vue.config.productionTip = false;
 
-new Vue({
-  router,
-  store,
-  render: (h) => h(App),
-}).$mount('#app');
+const preload = async () => {
+  await store.dispatch('updateCurrentModel', store.state.currentModel);
+  new Vue({
+    router,
+    store,
+    render: (h) => h(App),
+  }).$mount('#app');
+};
+
+preload();
