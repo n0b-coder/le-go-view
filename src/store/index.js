@@ -66,12 +66,14 @@ export default new Vuex.Store({
   mutations: {
     setCurrentModel(state, payload) {
       state.currentModel = payload;
-      window.location.reload();
+      console.log('commit mutation');
+      // window.location.reload();
+      console.log('after reload');
     },
   },
   actions: {
     updateCurrentModel({ commit }, payload) {
-      console.log(payload);
+      console.log('action');
       commit('setCurrentModel', payload);
       window.localStorage.setItem('modelData', JSON.stringify({ model: payload.model, image: payload.image, url: payload.url }));
       // eslint-disable-next-line no-restricted-globals
